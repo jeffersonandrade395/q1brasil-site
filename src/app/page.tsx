@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Q1Icon } from "@/components/q1-icon";
+import { Logo } from "@/components/logo";
 import { LeadForm } from "@/components/lead-form";
 
 /* COPY: texto exato de copy-landing-q1brasil.md (aprovada). IXC no centro, oferta
@@ -58,10 +58,10 @@ export default function HomePage() {
       <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/85 backdrop-blur-xl">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
           <Link href="/" className="flex items-center gap-2.5">
-            <Q1Icon className="h-9 w-9 rounded-md" />
-            <span className="text-lg font-extrabold tracking-tight text-slate-900">
-              Q1 Brasil
-            </span>
+            <Logo
+              iconClassName="h-9 w-9 rounded-md"
+              textClassName="text-lg font-extrabold tracking-tight text-slate-900"
+            />
           </Link>
           <a
             href="#piloto"
@@ -168,8 +168,10 @@ export default function HomePage() {
       <footer className="border-t border-slate-100 bg-white">
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-4 px-6 py-12 sm:flex-row sm:justify-center">
           <div className="flex items-center gap-2.5">
-            <Q1Icon className="h-6 w-6 rounded-md" />
-            <span className="font-bold text-slate-700">Q1 Brasil</span>
+            <Logo
+              iconClassName="h-6 w-6 rounded-md"
+              textClassName="font-bold text-slate-700"
+            />
           </div>
           <span className="hidden text-slate-300 sm:inline">·</span>
           <Link

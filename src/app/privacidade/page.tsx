@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Q1Icon } from "@/components/q1-icon";
+import { Logo } from "@/components/logo";
 
 export const metadata: Metadata = {
   title: "Política de Privacidade — Q1 Brasil",
@@ -17,8 +17,7 @@ export default function PrivacidadePage() {
         href="/"
         className="inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-brand-dark"
       >
-        <Q1Icon className="h-6 w-6 rounded-md" />
-        Q1 Brasil
+        <Logo iconClassName="h-6 w-6 rounded-md" />
       </Link>
 
       <h1 className="mt-10 text-3xl font-extrabold tracking-tight text-slate-900">
