@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Encode_Sans } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 
 const encodeSans = Encode_Sans({
@@ -29,8 +30,10 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
   return (
     <html lang="pt-BR" className={encodeSans.variable}>
+      {gtmId ? <GoogleTagManager gtmId={gtmId} /> : null}
       <body className="font-sans antialiased">{children}</body>
     </html>
   );
