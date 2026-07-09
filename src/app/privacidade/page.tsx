@@ -171,10 +171,10 @@ export default function PrivacidadePage() {
             Adotamos criptografia em trânsito (HTTPS) e em repouso, controle de
             acesso por perfil de usuário e isolamento lógico dos dados de cada
             provedor. <strong>O CPF do cliente final não é armazenado no
-            dispositivo</strong> — é capturado, transmitido com segurança e
-            descartado da memória do aplicativo após o envio. Os documentos ficam
-            em armazenamento privado, nunca em endereço público, e são acessíveis
-            somente por links temporários de curta duração.
+            dispositivo</strong>: é informado no formulário e transmitido com
+            segurança ao servidor, sem gravação local no aparelho. Os documentos
+            ficam em armazenamento privado, nunca em endereço público, e são
+            acessíveis somente por links temporários de curta duração.
           </p>
 
           <h3 className="mt-6 font-semibold text-slate-900">Retenção</h3>
